@@ -28,6 +28,8 @@ func discard() -> void:
 
 func _update_cards() -> void:
 	var cards := get_child_count()
+	var all_cards_size := x_size * cards + (x_sep * cards - 1)
+	var offset := (size.x - all_cards_size) / 2
 	
 	for i in cards:
 		var card := get_child(i)
@@ -38,4 +40,4 @@ func _update_cards() -> void:
 		
 		var x_sep_multiplier := i
 		
-		card.position = Vector2(x_size * i + x_sep * x_sep_multiplier, y_min + y_max * curve_multiplier)
+		card.position = Vector2(offset + x_size * i + x_sep * x_sep_multiplier, y_min + y_max * curve_multiplier)
