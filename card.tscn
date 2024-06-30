@@ -30,6 +30,7 @@ offset_right = -1052.0
 offset_bottom = -508.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(50, 140)
 theme_override_styles/panel = SubResource("StyleBoxFlat_5cuqc")
 script = ExtResource("1_4sblk")
 text = "Card 3"
