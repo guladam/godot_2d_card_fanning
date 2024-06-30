@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://tphn86kaqmon"]
+[gd_scene load_steps=4 format=3 uid="uid://tphn86kaqmon"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_0rb8f"]
 [ext_resource type="Script" path="res://hand.gd" id="2_drdp6"]
+[ext_resource type="Curve" uid="uid://b0hypxiciqx6n" path="res://hand_curve.tres" id="3_jwe8m"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -21,7 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.12393, 0.429359, 0.458081, 1)
 
-[node name="Hand" type="Control" parent="."]
+[node name="Hand" type="ColorRect" parent="."]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(800, 200)
 layout_mode = 1
@@ -35,7 +36,9 @@ offset_top = -200.0
 offset_right = 400.0
 grow_horizontal = 2
 grow_vertical = 0
+color = Color(1, 1, 1, 0.168627)
 script = ExtResource("2_drdp6")
+hand_curve = ExtResource("3_jwe8m")
 
 [node name="DrawCardButton" type="Button" parent="."]
 unique_name_in_owner = true

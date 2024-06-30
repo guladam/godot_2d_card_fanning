@@ -6,7 +6,7 @@ const CARD = preload("res://card.tscn")
 
 
 func _on_draw_card_button_pressed() -> void:
-	hand.draw(%DrawCardButton.global_position)
+	hand.draw()
 
 
 func _on_reset_button_pressed() -> void:
@@ -14,4 +14,4 @@ func _on_reset_button_pressed() -> void:
 
 
 func _on_discard_card_button_pressed() -> void:
-	hand.discard(%DiscardCardButton.global_position)
+	hand.discard()
