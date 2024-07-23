@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://game.gd" id="1_0rb8f"]
 [ext_resource type="Script" path="res://hand.gd" id="2_drdp6"]
-[ext_resource type="Curve" uid="uid://b0hypxiciqx6n" path="res://hand_y_curve.tres" id="3_jwe8m"]
-[ext_resource type="Curve" uid="uid://dekl34pqpl2hh" path="res://hand_rotation_curve.tres" id="4_lbysu"]
+[ext_resource type="Curve" uid="uid://dtskme7prx4g5" path="res://hand_y_curve.tres" id="3_jwe8m"]
+[ext_resource type="Curve" uid="uid://dwkwcluylhkq0" path="res://hand_rotation_curve.tres" id="4_lbysu"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -24,7 +24,7 @@ grow_vertical = 2
 color = Color(0.12393, 0.429359, 0.458081, 1)
 
 [node name="Hand" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(800, 75)
+custom_minimum_size = Vector2(800, 140)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
