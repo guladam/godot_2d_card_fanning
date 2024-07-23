@@ -1,7 +1,5 @@
 extends Control
 
-const CARD = preload("res://card.tscn")
-
 @onready var hand: Hand = $Hand
 
 
