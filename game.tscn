@@ -25,7 +25,7 @@ color = Color(0.12393, 0.429359, 0.458081, 1)
 
 [node name="Hand" type="ColorRect" parent="."]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(800, 200)
+custom_minimum_size = Vector2(800, 75)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -33,7 +33,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -400.0
-offset_top = -200.0
+offset_top = -140.0
 offset_right = 400.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -41,6 +41,10 @@ color = Color(1, 1, 1, 0.168627)
 script = ExtResource("2_drdp6")
 hand_curve = ExtResource("3_jwe8m")
 rotation_curve = ExtResource("4_lbysu")
+max_rotation_degrees = 5
+x_sep = -10
+y_min = 0
+y_max = -15
 
 [node name="DrawCardButton" type="Button" parent="."]
 unique_name_in_owner = true
