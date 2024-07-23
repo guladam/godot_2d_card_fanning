@@ -24,7 +24,6 @@ grow_vertical = 2
 color = Color(0.12393, 0.429359, 0.458081, 1)
 
 [node name="Hand" type="ColorRect" parent="."]
-unique_name_in_owner = true
 custom_minimum_size = Vector2(800, 75)
 layout_mode = 1
 anchors_preset = 7
@@ -47,7 +46,6 @@ y_min = 0
 y_max = -15
 
 [node name="DrawCardButton" type="Button" parent="."]
-unique_name_in_owner = true
 layout_mode = 0
 offset_left = 43.0
 offset_top = 36.0
@@ -56,7 +54,6 @@ offset_bottom = 67.0
 text = "Draw Card"
 
 [node name="ResetButton" type="Button" parent="."]
-unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -69,7 +66,6 @@ grow_horizontal = 2
 text = "Reset"
 
 [node name="DiscardCardButton" type="Button" parent="."]
-unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
