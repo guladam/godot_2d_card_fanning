@@ -36,14 +36,14 @@ func _update_cards() -> void:
 	
 	if all_cards_size > size.x:
 		final_x_sep = (size.x - Card.SIZE.x * cards) / (cards - 1)
-		all_cards_size = Card.SIZE.x * cards + (final_x_sep * (cards - 1))
+		all_cards_size = Card.SIZE.x * cards + final_x_sep * (cards - 1)
 	
 	var offset := (size.x - all_cards_size) / 2
 	
 	for i in cards:
 		var card := get_child(i)
-		var y_multiplier := hand_curve.sample((1.0 / (cards-1)) * i)
-		var rot_multiplier := rotation_curve.sample((1.0 / (cards-1)) * i)
+		var y_multiplier := hand_curve.sample(1.0 / (cards-1) * i)
+		var rot_multiplier := rotation_curve.sample(1.0 / (cards-1) * i)
 		
 		if cards == 1:
 			y_multiplier = 0.0
