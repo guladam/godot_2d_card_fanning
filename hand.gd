@@ -36,8 +36,8 @@ func _update_cards() -> void:
 	
 	if all_cards_size > size.x:
 		final_x_sep = (size.x - Card.SIZE.x * cards) / (cards - 1)
-		all_cards_size = Card.SIZE.x * cards + final_x_sep * (cards - 1)
-	
+		all_cards_size = size.x
+
 	var offset := (size.x - all_cards_size) / 2
 	
 	for i in cards:
